@@ -5,4 +5,4 @@ var messageSchema = new Schema({
     message: String
 });
 var Messages = mongoose.model( 'messages', messageSchema );
-module.export = Messages;
+module.exports = Messages;

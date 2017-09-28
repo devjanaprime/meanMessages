@@ -2,6 +2,10 @@ myApp.controller( 'MessagesController', [ 'MessagesService', function( MessagesS
     console.log( 'NG' );
     var vm=this;
 
+    vm.getMessages = function(){
+        MessagesService.getMessages();
+    }; // end get messages
+
     vm.submitMessage = function(){
         console.log( 'in submitMessage:', vm.messageIn );
         var messageToSend = {
@@ -17,5 +21,6 @@ myApp.controller( 'MessagesController', [ 'MessagesService', function( MessagesS
         vm.name = vm.nameIn;
     }; // end submitName
 
+    vm.getMessages();
     vm.messages = [ { from: 'test', message: 'test test test' } ];
 }]);
