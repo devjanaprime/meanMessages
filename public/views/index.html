@@ -11,8 +11,18 @@
     <title>Mean Messages</title>
 </head>
 <body ng-app="myApp">
-    <section ng-controller="MessagesController as MC">
-
-    </section>
+    <main ng-controller="MessagesController as MC">
+        <section id='noName' ng-hide='MC.name'>
+            <h2>Who are you?</h2>
+            <input type='text' placeholder="name" ng-model='MC.nameIn'><button ng-click='MC.submitName()'>Submit</button>
+        </section>
+        <section id='hasName' ng-show='MC.name'>
+            <h2>Greetings, {{ MC.name }}</h2>
+            <input type='text' placeholder="Message text" ng-model='MC.messageIn'><button ng-click='MC.submitMessage()'>Submit</button>
+        </section>
+        <section id='messages'>
+            <p ng-repeat="note in MC.messages">{{ note.message }}: <strong>{{ note.from }}</strong></p>
+        </section>
+    </main>
 </body>
 </html>
