@@ -1,7 +1,7 @@
 MEAN Messages
 ===
 
-We're going to create a basic MEAN stack project that will act as a message board. And by "we" I mean (ahem... MEAN) all of us. I'm going to enter what I call "puppet mode" and only will write what the class agress I should in order to complete the project.
+We're going to create a basic MEAN stack project that will act as a message board. And by "we" I mean (ahem... MEAN) all of us. I'm going to enter what I call "puppet mode" and only will write what the class decides I should in order to complete the project.
 
 - First, we'll briefly come up with a plan for how the project should behave.
 
