@@ -11,8 +11,13 @@
     <title>Mean Messages</title>
 </head>
 <body ng-app="myApp">
-    <section ng-controller="MessagesController as MC">
-
+    <section ng-controller="MessagesController as MC" ng-init='MC.getMessages()'>
+        <div ng-show='MC.userName'>
+            <h2>Welcome, {{ MC.userName }}</h2> <button ng-click='MC.logOut()'>log out</button>
+        </div>
+        <div ng-hide='MC.userName'>
+            <input type="text" placeholder="display name" ng-model='MC.nameIn'><button ng-click='MC.logIn()'>Log In</button>
+        </div>
     </section>
 </body>
 </html>
