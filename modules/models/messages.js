@@ -1,8 +1,8 @@
-var mongoose = require( 'mongoose' );
-var Schema = mongoose.Schema;
-var messageSchema = new Schema({
+let mongoose = require( 'mongoose' );
+let Schema = mongoose.Schema;
+let messageSchema = new Schema({
     from: String,
     message: String
 });
-var Messages = mongoose.model( 'messages', messageSchema );
+let Messages = mongoose.model( 'messages', messageSchema );
 module.export = Messages;

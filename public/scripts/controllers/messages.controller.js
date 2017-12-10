@@ -1,4 +1,4 @@
-myApp.controller( 'MessagesController', [ 'MessagesService', function( MessagesService ){
+myApp.controller( 'MessagesController', [ 'MessagesService', ( MessagesService ) => {
     console.log( 'NG' );
-    var vm=this;
+    let vm=this;
 }]);
